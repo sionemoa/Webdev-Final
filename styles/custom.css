@@ -1,0 +1,29 @@
+body {
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  text-align: center;
+}
+
+h1, h2 {
+  color: #003366;
+}
+
+img {
+  border: 3px solid #003366;
+  margin: 20px 0;
+}
+
+ol li {
+  margin: 10px 0;
+}
+
+.nav-buttons a {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 15px;
+  background-color: #003366;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}

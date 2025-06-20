@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Football Joke Generator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #eef2f7;
+      padding: 40px;
+    }
+
+    h1 {
+      color: #003366;
+    }
+
+    #joke-box {
+      margin-top: 20px;
+      font-size: 1.2rem;
+      color: #222;
+      padding: 20px;
+      border: 2px dashed #003366;
+      background-color: #fff;
+      display: inline-block;
+      max-width: 600px;
+    }
+
+    button {
+      background-color: #003366;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1rem;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    button:hover {
+      background-color: #0055a5;
+    }
+
+    .nav-link {
+      display: block;
+      margin-top: 30px;
+      color: #003366;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Football Joke Generator</h1>
+  <p>Click below to hear a new football joke!</p>
+
+  <div id="joke-box">Press the button to laugh!</div><br>
+
+  <button onclick="generateJoke()">Tell Me a Joke</button>
+
+  <a href="football.html" class="nav-link">⬅ Back to Football Page</a>
+
+  <script>
+    const jokes = [
+      "Why did the football team go to the bank? To get their quarterback!",
+      "Why was the football player upset on his birthday? He got a red card instead of a gift!",
+      "What do you call a lineman's kid? A chip off the old block.",
+      "Why can’t football players do laundry? Because they always lose their quarters.",
+      "What’s a football player's favorite type of tea? Penal-tea."
+    ];
+
+    function generateJoke() {
+      const randomJoke = jokes[Math.floor(Math.random() * jokes.length)];
+      document.getElementById("joke-box").innerText = randomJoke;
+    }
+  </script>
+
+</body>
+</html>
